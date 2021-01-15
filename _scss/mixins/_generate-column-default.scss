@@ -1,0 +1,12 @@
+@mixin generate-column-default {
+  //.container > [class^=column]
+  .#{get-config-value(container_classname)} > [class^=#{get-config-value(column_classname)}] {
+    box-sizing: border-box;
+    padding: get-config-value(column_padding_default);
+    position: relative;
+
+    @include desktop-view {
+      padding: get-config-value(column_padding_desktop);
+    }
+  }
+}

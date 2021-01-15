@@ -1,11 +1,17 @@
 @mixin generate-columns {
-  $postfixes: var(column-postfix);
-  $grid-size: var(grid-size);
+  $desktop-postfix: get-config-value(column_desktop-postfix);
+  $grid-size: get-config-value(grid_size);
 
-  @each $type, $postfix in $postfixes {
-    @for $i from 1 through $grid-size {
-      .#{var(column-classname)}-#{$postfix}-#{$i} {
-        @include set-column-width($postfix, $i);
+  @for $i from 1 through $grid-size {
+    .#{get-config-value(column_classname)}-#{$i} {
+      width: get-column-width($i);
+    }
+  }
+
+  @for $i from 1 through $grid-size {
+    .#{get-config-value(column_classname)}-#{$desktop-postfix}-#{$i} {
+      @include desktop-view {
+        width: get-column-width($i);
       }
     }
   }

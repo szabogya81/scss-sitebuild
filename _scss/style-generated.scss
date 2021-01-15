@@ -3,6 +3,6 @@
 @import "./variables/variables";
 
 
-@include column-default-style();
+@include generate-column-default();
 @include generate-columns();
 @include generate-container();

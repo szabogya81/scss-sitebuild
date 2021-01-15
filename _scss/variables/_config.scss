@@ -1,35 +1,24 @@
 $config: (
+  nav: (
+
+  ),
   grid: (
     size:12,
-    breakpoint: (
-      mobile: 640px,
-      tablet: 960px,
-      desktop: 1280px
-    )
+    desktop-breakpoint: 993px,
   ),
   container: (
     classname: container,
-    maxWidth: 1280px,
+    // maxWidth: 1280px,
     padding: (
       default: 5px,
-      mobile: 6px,
-      tablet: 7.5px,
       desktop: 9px
     )
   ),
   column: (
     classname: col,
-    postfix: (
-      default: xs, //column--xs-12
-      mobile: sm,   //column--sm-6
-      tablet: md, //column--md-4
-      desktop: lg,   //column--lg-3
-
-    ),
+    desktop-postfix: md,
     padding: (
       default: 10px,
-      mobile: 12px,
-      tablet: 15px,
       desktop: 18px
     )
   )

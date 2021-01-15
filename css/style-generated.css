@@ -1,0 +1,147 @@
+.container > [class^=col] {
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+@media only screen and (min-width: 993px) {
+  .container > [class^=col] {
+    padding: 18px;
+  }
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-3 {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-9 {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    padding: 9px;
+  }
+}
+
+/*# sourceMappingURL=style-generated.css.map */
