@@ -1,0 +1,114 @@
+.modal.modal--active {
+    background-color: honeydew;
+    border: 1px solid #888;
+    box-shadow: 2px 2px 1px #666;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    left:0;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+}
+
+@media screen and (min-width: 561px) {
+    .modal.modal--active {
+        background-color: honeydew;
+        border: 1px solid #888;
+        bottom: 25%;
+        box-shadow: 2px 2px 1px #666;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        left:25%;
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 25%;
+        width: 50%;
+        z-index: 9000;
+    }
+}
+
+.modal {
+    display: none;
+    opacity: 0;
+}
+
+.modal__closeButton {
+    background-color: honeydew;
+    border: none;
+    font-size: 2rem;
+    flex:100%;
+    min-height: 2.5rem;
+    margin-left: 95%;
+    min-width: 2.2rem;
+}
+.modal__header{
+    flex:100%;
+    outline:none;
+}
+
+.modal__main{  
+    flex:100%;
+    min-height: 65%;
+    outline:none;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+}
+
+.modal__footer {
+    display: flex;
+    outline:none;
+    padding: 1rem 0;
+}
+
+.modal__footer div {
+    box-sizing: border-box;
+    flex: 80%;
+    outline:none;
+}
+
+.footer__yesButton{
+    background-color: #00BB00;
+    color: #fff;
+    flex: 10%;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.footer__yesButton:focus{
+    background-color: #FFF;
+    color: #00BB00;
+    flex: 10%;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.footer__noButton{
+    background-color: #EE0000;
+    color: #fff;
+    flex: 10%;
+    font-size: 2rem;
+}
+
+.footer__noButton:focus{
+    background-color: #FFF;
+    color: #EE0000;
+    flex: 10%;
+    font-size: 2rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 8000;
+    background-color: rgba(0, 0, 0, 0.7);
+  }

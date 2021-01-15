@@ -1,0 +1,58 @@
+@debug '----- EQUALITY CHECK ------';
+@debug 1px == 1; //false
+@debug 1px == 1px; //true
+
+@debug 10px == 1cm;
+@debug 48px == 0.5in;
+@debug 0.99999999999999 == 1;
+
+@debug Arial == 'Arial';
+@debug Arial == "Arial";
+@debug 'Arial' != "Arial";
+
+@debug true == true;
+@debug true != false;
+
+@debug '----- RELATIONS ------';
+@debug 100 > 50;
+@debug 10px < 17px;
+@debug 96px >= 1in;
+@debug 1ms <= 10s;
+
+@debug '----- MATH ------';
+@debug 10s + 5s;
+@debug 10s - 50ms;
+@debug 10px * 2;
+@debug 10px % 2;
+@debug 'special';
+@debug 10px * 2px;
+@debug 10px / 2;
+@debug 10px/2;
+@debug 10px / 2px;
+@debug 10px/2px;
+@debug (10px/2px);
+@debug (10px / 2px);
+@debug (10px/2);
+@debug (10px / 2);
+
+
+@debug '----- MATH ------';
+@debug "Times " + "New Roman";
+
+.col::before {
+  font: "Times " + "New Roman", Arial, serif;
+}
+
+$postfix: "--10";
+
+.col#{$postfix}::after {
+  content: #{'track'-'list'};
+  content: #{track-list} ;
+}
+
+@debug '----- LOGICAL ------';
+@debug not true;
+@debug true or false;
+@debug true and false;
+@debug not (3 > 4);
+@debug 2 < 3 and 4 > 5;

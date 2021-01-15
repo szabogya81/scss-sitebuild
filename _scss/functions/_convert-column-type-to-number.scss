@@ -1,0 +1,21 @@
+@function convert-column-type-to-number($column-type) {
+  @if $column-type == var(column-postfix-default) {
+    @return 1;
+  }
+
+  @else if $column-type == var(column-postfix-mobile) {
+    @return 2;
+  }
+
+  @else if $column-type == var(column-postfix-tablet) {
+    @return 3;
+  }
+
+  @else if $column-type == var(column-postfix-desktop) {
+    @return 4;
+  }
+
+  @else {
+    @error "Invalid column type: #{$column-type}."
+  }
+}
