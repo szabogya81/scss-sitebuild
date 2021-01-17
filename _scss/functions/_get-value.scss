@@ -1,4 +1,4 @@
-@function get-config-value($string, $data: $config) {
+@function get-value($string, $data: $config) {
   $keys: get-keys($string);
   
   @each $key in $keys {

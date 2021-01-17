@@ -5,25 +5,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://kit.fontawesome.com/2a41d2f043.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/style-generated.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-generated.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <title>Start Bootstrap</title>
 </head>
 
 <body>
-  <header class="sticky-top px-md-5">
-    <nav class="col-12 col-md-8 navbar navbar-expand-md navbar-light  offset-md-2 px-md-4">
-      <a class="navbar-brand mr-auto active" href="#">Start Bootstrap</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
-        aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-        Menu<span class="navbar-toggler-icon m1-1"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainMenu">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link download" href="#download">Download</a>
-          <a class="nav-link features" href="#features">Features</a>
-          <a class="nav-link contact" href="#contact">Contact</a>
-        </div>
+  <header>
+    <nav class="nav nav--main">
+      <div class="container nav__container">
+        <a class="nav__brand active" href="#">Start Bootstrap</span></a>
+        <label class="nav__hamburger-label" for="menu">
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </label>
+        <input class="nav__hamburger-checkbox" type="checkbox" id="menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#download">Download</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#features">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -80,7 +89,8 @@
             </div>
           </div>
           <div class="row pt-5 pb-5 pt-md-4 mt-md-3 mb-md-1">
-            <div class="d-flex justify-content-center col-10 offset-1 px-2 pb-3 mb-5 bg-transparent col-md-4 offset-md-0 px-md-0 ml-md-5 mb-md-0 pt-md-2">
+            <div
+              class="d-flex justify-content-center col-10 offset-1 px-2 pb-3 mb-5 bg-transparent col-md-4 offset-md-0 px-md-0 ml-md-5 mb-md-0 pt-md-2">
               <img src="./img/phone.png" alt="Mobile" class="w-75">
               <img class="demoScreen demoFeature" src="./img/demo-screen-1.jpg" alt="" class="w-100">
             </div>
@@ -170,135 +180,57 @@
     </section>
   </main>
 
-  <footer class="py-3 text-center text-md-left mt-auto">
+  <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-        <p class="mb-0">
-            © Your Website 2018. All Rights Reserved.
-          </p>
-          <nav class="nav justify-content-center">
-            <a class="nav-link footer-link pt-2 pr-0" href="#" data-toggle="modal" data-target="#privacyModal">Privacy</a>
-            <a class="nav-link footer-link pt-2 px-2" href="#" data-toggle="modal" data-target="#termsModal">Terms</a>
-            <a class="nav-link footer-link pt-2 pl-0" href="#" data-toggle="modal" data-target="#faqModal">FAQ</a>
-          </nav>
-        </div>
+      <div class="col-12 footer-info">
+        <p class="footer-info">
+          © Your Website 2018. All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-12">
+        <nav class="nav">
+          <a class="footer-link" href="#privacyModal">Privacy</a>
+          <a class="footer-link" href="#termsModal">Terms</a>
+          <a class="footer-link" href="#faqModal">FAQ</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="privacyModalLabel">Privacy Statement</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus id, voluptatibus optio qui sequi
-          molestiae amet sed! Atque, dolores eos ipsam voluptates enim accusantium culpa obcaecati dicta minima
-          expedita.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+  <div id="privacyModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Privacy Statement</h2>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus id, voluptatibus optio qui sequi
+        molestiae amet sed! Atque, dolores eos ipsam voluptates enim accusantium culpa obcaecati dicta minima
+        expedita.</p>
+      <button type="button" class="btn btn-success close" data-dismiss="modal">Close</button>
     </div>
   </div>
 
-  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, commodi quam saepe, blanditiis ducimus magni,
-          ab repudiandae fuga hic quidem doloremque placeat ipsum repellendus distinctio perferendis laudantium aliquam
-          similique nesciunt.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+  <div id="termsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Terms and Conditions</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus id, voluptatibus optio qui sequi
+        molestiae amet sed! Atque, dolores eos ipsam voluptates enim accusantium culpa obcaecati dicta minima
+        expedita.</p>
+      <button type="button" class="btn btn-success close">Close</button>
     </div>
   </div>
 
-  <nav class="nav">
-    <div class="nav__container">
-      <label class="nav__hamburger-label" for="menu">
-        <span class="nav__hamburger-line"></span>
-        <span class="nav__hamburger-line"></span>
-        <span class="nav__hamburger-line"></span>
-      </label>
-      <input class="nav__hamburger-checkbox" type="checkbox" id="menu">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="">About</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="modal" id="modal">
-    <button class="modal__closeButton" tabindex="1">X</button>
-
-    <header class="modal__header" tabindex="0">
-      <h2>CSSScript.com</h2>
-    </header>
-
-    <main class="modal__main" tabindex="0">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Donec sodales enim at odio porta dictum. Nulla orci lorem, malesuada non urna bibendum, 
-        rutrum pretium nulla. Sed eleifend, justo vitae finibus sollicitudin, 
-        leo lectus rhoncus justo, sed congue tellus augue quis lorem. Nunc pellentesque ipsum et 
-        lorem tempor, a dictum lacus luctus. Donec eget blandit odio, ac ultrices tortor. 
-        Mauris laoreet arcu id neque vulputate aliquam. Maecenas facilisis, ligula at pulvinar 
-        mattis, justo risus aliquet augue, ut bibendum lorem tortor nec mauris.
+  <div id="faqModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Frequently Asked Questions</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus id, voluptatibus optio qui sequi
+        molestiae amet sed! Atque, dolores eos ipsam voluptates enim accusantium culpa obcaecati dicta minima
+        expedita.
       </p>
-    </main>
-
-    <footer class="modal__footer"  tabindex="0">
-      <div></div tabindex="0">
-      <button class="footer__yesButton"  tabindex="2">Okey</button>
-      <button class="footer__noButton" tabindex="3">Cancel</button>
-    </footer>
-
-  </div>
-
-
-  <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="faqModalLabel">Frequently Asked Questions</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod eum odit vero dolor repudiandae quas
-          dignissimos autem possimus cupiditate? Sed qui quod ab aut, totam voluptatibus nihil doloremque ipsam.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+      <button type="button" class="btn btn-success close">Close</button>
     </div>
   </div>
-
   <script src="./js/main.js"></script>
   <script src="./js/modal.js"></script>
 </body>

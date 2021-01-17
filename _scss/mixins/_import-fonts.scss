@@ -1,0 +1,8 @@
+@mixin import-fonts {
+  @each $name, $source in $fonts {
+    @font-face {
+      font-family: $name;
+      src: url($source);
+    }
+  }
+}

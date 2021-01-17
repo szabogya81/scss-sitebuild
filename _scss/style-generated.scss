@@ -6,3 +6,8 @@
 @include generate-column-default();
 @include generate-columns();
 @include generate-container();
+
+@include import-fonts();
+@include generate-header();
+@include generate-menu();
+@include generate-footer();

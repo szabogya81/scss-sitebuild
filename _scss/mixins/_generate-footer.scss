@@ -1,0 +1,36 @@
+@mixin generate-footer {
+  footer
+  {
+    font-family: Muli, Helvetica, Arial, sans-serif;
+    background-color: get-value('footer_background', $data: $colors);
+    color: get-value('footer_text', $data: $colors);
+    font-size: 0.7rem;
+    padding: 0.9rem 0;
+    text-align: center;
+
+    .container {
+      padding-top: 0;
+    }
+
+    .container > [class^=col] {
+      margin-bottom: 0.25rem;
+      padding: 0;
+    }
+
+    .footer-info {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .footer-link {
+      color: get-value('footer_text', $data: $colors);
+      margin-top: 1rem;
+      padding: 0 0.25rem 0 0.25rem;
+      text-decoration: none;
+    }
+    
+    .footer-link:hover {
+      color:  get-value('footer_link-hover', $data: $colors);
+    }
+  }
+}

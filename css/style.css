@@ -199,19 +199,6 @@ p, footer {
   background-color:rgb(221, 76, 57, 1);
 }
 
-footer {
-  background-color:  #222;
-  color: #626262;
-  font-size: 0.7rem;
-}
-
-.footer-link {
-  color:#626262;
-}
-
-.footer-link:hover {
-  color:  #fdcc52;
-}
 
 @media screen and (min-width: 769px) {
   h1 {

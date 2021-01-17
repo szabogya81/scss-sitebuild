@@ -1,15 +1,15 @@
 @mixin generate-columns {
-  $desktop-postfix: get-config-value(column_desktop-postfix);
-  $grid-size: get-config-value(grid_size);
+  $desktop-postfix: get-value(column_desktop-postfix);
+  $grid-size: get-value(grid_size);
 
   @for $i from 1 through $grid-size {
-    .#{get-config-value(column_classname)}-#{$i} {
+    .#{get-value(column_classname)}-#{$i} {
       width: get-column-width($i);
     }
   }
 
   @for $i from 1 through $grid-size {
-    .#{get-config-value(column_classname)}-#{$desktop-postfix}-#{$i} {
+    .#{get-value(column_classname)}-#{$desktop-postfix}-#{$i} {
       @include desktop-view {
         width: get-column-width($i);
       }

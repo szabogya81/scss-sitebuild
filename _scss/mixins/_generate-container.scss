@@ -1,16 +1,16 @@
 @mixin generate-container {
-  .#{get-config-value(container_classname)} {
+  .#{get-value(container_classname)} {
     box-sizing: border-box;
     display: flex;
     flex: 0 1 auto;
     flex-flow: row wrap;
     margin: 0 auto;
-    padding: get-config-value(container_padding_default);
+    padding: get-value(container_padding_default);
     position: relative;
-    //max-width: get-config-value(container-maxWidth);
+    //max-width: get-value(container-maxWidth);
 
     @include desktop-view {
-      padding: get-config-value(container_padding_desktop);
+      padding: get-value(container_padding_desktop);
     }
   }
 }

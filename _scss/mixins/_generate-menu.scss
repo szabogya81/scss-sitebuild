@@ -1,0 +1,106 @@
+@mixin generate-menu {
+  .nav.nav--main {
+    background: transparent;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    .nav__container {
+      align-items: flex-start;
+      display: flex;
+      width: 100%;
+    }
+
+    .nav__brand {
+      margin-right: auto;
+      text-decoration: none;
+      align-self: center;
+      
+      &:hover {
+        color: get-value("menu_text-hover", $data: $colors);
+      }
+  
+      &.active {
+        color: get-value("menu_active-item", $data: $colors);
+      }
+    }
+  
+    .nav__list {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      margin: 0 0;
+      padding: 0;
+      width: 100%;
+      
+      @include desktop-view {
+        display: flex;
+          flex-direction: row;
+          width: auto;
+      }
+    }
+  
+    .nav__item {
+      text-align: left;
+    }
+  
+    .nav__link {
+      color: get-value("menu_text", $data: $colors);
+      display: block;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 1rem;
+      text-decoration: none;
+  
+      &:hover {
+        color: get-value("menu_text-hover", $data: $colors);
+      }
+  
+      &.active {
+        color: get-value("menu_active-item", $data: $colors);
+      }
+    }
+  
+    .nav__hamburger {
+      &-checkbox {
+        display: none;
+    
+        &:checked + .nav__list {
+          display: flex;
+        }
+      }
+  
+      &-label {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        padding: 0.75rem;
+        width: 1.5rem;
+        
+        @include desktop-view {
+          display: none;
+        }
+      }
+      
+      &-line {
+        background-color: get-value("menu_text", $data: $colors);
+        display: block;
+        height: 2px;
+        width: 1.5rem;
+      }
+    }
+  
+    &.scroll {
+      color: get-value("menu_text", $data: $colors);
+      background-color: get-value("menu_background-scroll", $data: $colors);
+
+      .nav__link:hover {
+        &:hover {
+          color:get-value("menu_text-scroll", $data: $colors);
+        }
+      }
+    }
+  }
+}
