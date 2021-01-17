@@ -38,145 +38,88 @@
   </header>
 
   <main>
-    <section id="top" class="top px-5 ml-md-4 pb-md-5">
+    <section id="top" class="top">
       <div class="container">
-        <div class="row align-items-center pb-md-2 pt-md-2">
-          <div class="col-12 col-md-5 d-flex flex-column align-items-center pt-4 offset-md-1 pl-md-3 pt-md-5">
-            <h2 class="h3 text-center text-white pt-5 pb-4 px-2 pl-md-4 pr-md-0 text-md-left mb-md-0 pb-md-5">
+          <div class="col-12 col-md-6 top__info">
+            <h2 class="top__title">
               New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything
               else!
             </h2>
-            <button class="startButton now mb-5 w-50 mr-md-auto">START NOW FOR FREE!</button>
+            <button class="top__button">START NOW FOR FREE!</button>
           </div>
-          <div class="col-8 col-md-5 offset-2 my-5 offset-md-0 ml-md-auto pl-md-5 pt-md-4 pb-md-0 mb-md-4">
-            <img src="./img/phone.png" alt="Mobile" class="topPhone">
-            <img class="demoScreen demoTop" src="./img/demo-screen-1.jpg" alt="Demo Screen" class="w-100">
+          <div class="col-12 col-md-6 top__phone">
+            <img class="phone" src="./img/phone.png" alt="Mobile">
+            <img class="screen" src="./img/demo-screen-1.jpg" alt="Phone demo screen">
           </div>
         </div>
       </div>
     </section>
 
     <section class="download" id="download">
-      <div class="jumbotron jumbotron-fluid mt-md-5 mb-0 px-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-12 text-center pt-md-1">
-              <h1 class="pt-4 mt-5 mt-md-3 pt-md-5">Discover what all the <br> buzz is about!</h1>
-            </div>
-            <div class="col-12 col-md-12 text-center pb-2 pb-md-0">
-              <p>Our app is available on any mobile device! Download now to get started!</p>
-            </div>
-          </div>
-          <div class="row mb-md-4 pb-md-4">
-            <div class="col-10 col-md-4 offset-1 d-flex flex-column align-items-center flex-md-row  offset-md-4">
-              <img class="w-50 pb-4 pb-md-1 mb-md-3 pr-md-1" src="./img/google-play-badge.svg" alt="Google Play link">
-              <img class="w-50 pb-5 mb-4 pb-md-1 mb-md-3 pl-md-0" src="./img/app-store-badge.svg" alt="App Store link">
-            </div>
-          </div>
+      <div class="container">
+        <div class="col-12">
+          <h1 class="download__title">Discover what all the <br> buzz is about!</h1>
+        </div>
+        <div class="col-12">
+          <p class="download__subtitle">Our app is available on any mobile device! Download now to get started!</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="https://play.google.com/">
+            <img class="download__badge" src="./img/google-play-badge.svg" alt="Google Play link">
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="https://www.apple.com/hu/ios/app-store/">
+            <img class="download__badge" src="./img/app-store-badge.svg" alt="App Store link">
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- <section id="features" class="features">
-      <div class="jumbotron jumbotron-fluid bg-white pt-5 px-5 mb-0 pb-md-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center pt-4">
-              <h1 class="pt-3 pb-1 pt-md-2 mt-md-2 pb-md-0 mb-md-1">Unlimited Features, Unlimited Fun</h1>
-            </div>
-            <div class="col-12 text-center pb-5 mt-md-0">
-              <p>Check out what you can do with this app theme!</p>
+    <section id="features" class="features">
+      <div class="container">
+        <div class="col-12">
+          <h1 class="features__title">Unlimited Features, Unlimited Fun</h1>
+        </div>
+        <div class="col-12">
+          <p class="features__subtitle">Check out what you can do with this app theme!</p>
+        </div>
+        <div class="col-12 col-md-6 features__phone">
+          <img class="phone" src="./img/phone.png" alt="Mobile">
+          <img class="screen" src="./img/demo-screen-1.jpg" alt="Phone demo screen">
+        </div>
+        <div class="col-12 col-md-6 features__list">
+          <div>
+            <div class="card-body">
+              <h2 class="card-title">&#128241;</h2>
+              <h3 class="card-subtitle">Device Mockups</h3>
+              <p class="card-text">Ready to use HTML/CSS device<br>mockups, no Photoshop required!</p>
             </div>
           </div>
-          <div class="row pt-5 pb-5 pt-md-4 mt-md-3 mb-md-1">
-            <div
-              class="d-flex justify-content-center col-10 offset-1 px-2 pb-3 mb-5 bg-transparent col-md-4 offset-md-0 px-md-0 ml-md-5 mb-md-0 pt-md-2">
-              <img src="./img/phone.png" alt="Mobile" class="w-75">
-              <img class="demoScreen demoFeature" src="./img/demo-screen-1.jpg" alt="" class="w-100">
+          <div>
+            <div class="card-body">
+              <h2 class="card-title">&#x1F4F8;</h2>
+              <h3 class="card-subtitle">Flexible Use</h3>
+              <p class="card-text">Put an image, video, animation, or<br>anything else in the screen!</p>
             </div>
-            <div class="mt-5 pt-2 col-md-7 px-md-0 mt-md-4 pt-md-4">
-              <div class="row">
-                <div class="col-12 card border-0 mb-5 bg-transparent col-md-6">
-                  <div class="card-body text-center px-md-0">
-                    <h5 class="h1 card-title mb-3 mb-md-2">&#128241;</h5>
-                    <h6 class="h4 card-subtitle mb-2 pt-md-1">Device Mockups</h6>
-                    <p class="card-text">Ready to use HTML/CSS device<br>mockups, no Photoshop required!</p>
-                  </div>
-                </div>
-                <div class="col-12 card border-0 mb-5 mt-4 bg-transparent col-md-6 mt-md-0">
-                  <div class="card-body text-center pl-md-0 pr-md-5">
-                    <h5 class="h1 card-title mb-3 mb-md-2">&#x1F4F8;</h5>
-                    <h6 class="h4 card-subtitle mb-2 pt-md-1">Flexible Use</h6>
-                    <p class="card-text">Put an image, video, animation, or<br>anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-md-3 pt-md-1">
-                <div class="col-12 card border-0 mb-5 mt-4 bg-transparent col-md-6 mt-md-0">
-                  <div class="card-body text-center px-md-0">
-                    <h5 class="h1 card-title mb-3 mb-md-2">&#x1F381;</h5>
-                    <h6 class="h4 card-subtitle mb-2 pt-md-1">Free to Use</h6>
-                    <p class="card-text">As always, this theme is free to<br>download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-12 card border-0 mb-4 mt-4 bg-transparent col-md-6 mt-md-0 mb-md-0">
-                  <div class="card-body text-center pl-md-0 pr-md-5">
-                    <h5 class="h1 card-title mb-3 mb-md-2">&#128275;</h5>
-                    <h6 class="h4 card-subtitle mb-2 pt-md-1">Open Source</h6>
-                    <p class="card-text">Since this theme is MIT licensed, you<br>can use it commercially!</p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div>
+            <div class="card-body">
+              <h2 class="card-title">&#x1F381;</h2>
+              <h3 class="card-subtitle">Free to Use</h3>
+              <p class="card-text">As always, this theme is free to<br>download and use for any purpose!</p>
+            </div>
+          </div>
+          <div>
+            <div class="card-body">
+              <h2 class="card-title">&#128275;</h2>
+              <h3 class="card-subtitle">Open Source</h3>
+              <p class="card-text">Since this theme is MIT licensed, you<br>can use it commercially!</p>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-
-    <section id="features" class="features">
-        <div class="container">
-          <div class="col-12">
-            <h1 class="features__title">Unlimited Features, Unlimited Fun</h1>
-          </div>
-          <div class="col-12">
-            <p class="features__subtitle">Check out what you can do with this app theme!</p>
-          </div>
-          <div class="col-12 col-md-6 features__phone">
-              <img class="phone" src="./img/phone.png" alt="Mobile">
-              <img class="screen" src="./img/demo-screen-1.jpg" alt="Phone demo screen" >
-          </div>
-          <div class="col-12 col-md-6 features__list">
-            <div>
-              <div class="card-body">
-                <h2 class="card-title">&#128241;</h2>
-                <h3 class="card-subtitle">Device Mockups</h3>
-                <p class="card-text">Ready to use HTML/CSS device<br>mockups, no Photoshop required!</p>
-              </div>
-            </div>
-            <div>
-              <div class="card-body">
-                <h2 class="card-title">&#x1F4F8;</h2>
-                <h3 class="card-subtitle">Flexible Use</h3>
-                <p class="card-text">Put an image, video, animation, or<br>anything else in the screen!</p>
-              </div>
-            </div>
-            <div>
-              <div class="card-body">
-                <h2 class="card-title">&#x1F381;</h2>
-                <h3 class="card-subtitle">Free to Use</h3>
-                <p class="card-text">As always, this theme is free to<br>download and use for any purpose!</p>
-              </div>
-            </div>
-            <div>
-              <div class="card-body">
-                <h2 class="card-title">&#128275;</h2>
-                <h3 class="card-subtitle">Open Source</h3>
-                <p class="card-text">Since this theme is MIT licensed, you<br>can use it commercially!</p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
 

@@ -11,8 +11,21 @@ $colors: (
     text-scroll:#a8a3a3
   ),
 
+  top: (
+    title: #fff
+  ),
+
+  download: (
+    background: #fec63b,
+  ),
+
+  features: (
+    background: #fff,
+  ),
+
   start: (
     background-layer: rgba(0, 0, 0, 0.6),
+    h2: #fff,
     start-button: (
       background: rgba(255,255,255,0),
       color: #fff,

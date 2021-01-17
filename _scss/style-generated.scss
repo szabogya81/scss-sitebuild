@@ -11,6 +11,8 @@
 @include import-fonts();
 @include header();
 @include main-menu();
+@include top-section();
+@include download-section();
 @include feature-section();
 @include start-section();
 @include contact-section();

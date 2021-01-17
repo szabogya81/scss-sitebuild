@@ -270,6 +270,107 @@ header {
   color: #a8a3a3;
 }
 
+.top {
+  padding: 2.4rem 3rem 0rem 3rem;
+}
+.top__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top__title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+.top__button {
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid transparent;
+  border-color: #fff;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 0.65rem;
+  font-stretch: ultra-expanded;
+  margin-bottom: 4.3rem;
+  margin-top: 2.6rem;
+  padding: 0.9rem 3rem;
+  transition: 0.3s;
+}
+.top__button:hover {
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+}
+.top__phone {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.2rem;
+}
+.top__phone .phone {
+  width: 66%;
+}
+.top__phone .screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+}
+.top__list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.top__list .card-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+.top__list .card-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+  text-align: center;
+}
+.top__list .card-text {
+  margin-bottom: 3.8rem;
+  margin-top: 0;
+  line-height: 1.45rem;
+  text-align: center;
+}
+
+.download {
+  background-color: #fec63b;
+  padding: 5.7rem 2.8rem 6.5rem 2.8rem;
+  text-align: center;
+}
+.download .container > [class^=col] {
+  margin-bottom: 0.25rem;
+  padding: 0;
+}
+.download__title {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 3.4rem;
+  margin-bottom: 0;
+}
+.download__subtitle {
+  line-height: 1.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+.download__badge {
+  margin-bottom: 1rem;
+  width: 37%;
+}
+
 .features {
   background-color: #fff;
   padding: 2.6rem 2rem 4.7rem 2rem;
