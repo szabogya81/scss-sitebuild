@@ -1,7 +1,7 @@
-@mixin generate-menu {
+@mixin main-menu {
   .nav.nav--main {
     background: transparent;
-    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
 
@@ -47,6 +47,7 @@
     .nav__link {
       color: get-value("menu_text", $data: $colors);
       display: block;
+      font-family: Lato, Helvetica, Arial, sans-serif;
       font-size: 1rem;
       line-height: 1rem;
       padding: 1rem;

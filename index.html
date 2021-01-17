@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://kit.fontawesome.com/2a41d2f043.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <link rel="stylesheet" href="./css/style-generated.css">
   <link rel="stylesheet" href="./css/modal.css">
   <title>Start Bootstrap</title>
@@ -77,7 +77,7 @@
       </div>
     </section>
 
-    <section id="features" class="features">
+    <!-- <section id="features" class="features">
       <div class="jumbotron jumbotron-fluid bg-white pt-5 px-5 mb-0 pb-md-4">
         <div class="container">
           <div class="row">
@@ -131,50 +131,80 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="start" class="start">
-      <div class="jumbotron jumbotron-fluid mb-0 h-100 d-flex flex-column justify-content-center">
-        <div class="container pl-5">
-          <div class="row text-white pl-2">
-            <div class="col-12 mb-md-0">
-              <h2 class="h1">Stop waiting.</h2>
+    <section id="features" class="features">
+        <div class="container">
+          <div class="col-12">
+            <h1 class="features__title">Unlimited Features, Unlimited Fun</h1>
+          </div>
+          <div class="col-12">
+            <p class="features__subtitle">Check out what you can do with this app theme!</p>
+          </div>
+          <div class="col-12 col-md-6 features__phone">
+              <img class="phone" src="./img/phone.png" alt="Mobile">
+              <img class="screen" src="./img/demo-screen-1.jpg" alt="Phone demo screen" >
+          </div>
+          <div class="col-12 col-md-6 features__list">
+            <div>
+              <div class="card-body">
+                <h2 class="card-title">&#128241;</h2>
+                <h3 class="card-subtitle">Device Mockups</h3>
+                <p class="card-text">Ready to use HTML/CSS device<br>mockups, no Photoshop required!</p>
+              </div>
             </div>
-            <div class="col-12 mb-2 pb-md-2">
-              <h2 class="h1">Start building.</h2>
+            <div>
+              <div class="card-body">
+                <h2 class="card-title">&#x1F4F8;</h2>
+                <h3 class="card-subtitle">Flexible Use</h3>
+                <p class="card-text">Put an image, video, animation, or<br>anything else in the screen!</p>
+              </div>
             </div>
-            <div class="col-12">
-              <button class="startButton">LET'S GET STARTED!</button>
+            <div>
+              <div class="card-body">
+                <h2 class="card-title">&#x1F381;</h2>
+                <h3 class="card-subtitle">Free to Use</h3>
+                <p class="card-text">As always, this theme is free to<br>download and use for any purpose!</p>
+              </div>
             </div>
+            <div>
+              <div class="card-body">
+                <h2 class="card-title">&#128275;</h2>
+                <h3 class="card-subtitle">Open Source</h3>
+                <p class="card-text">Since this theme is MIT licensed, you<br>can use it commercially!</p>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="start" class="start">
+      <div class="container">
+        <div class="col-12">
+          <h2 class="h1">Stop waiting.</h2>
+        </div>
+        <div class="col-12">
+          <h2 class="h1">Start building.</h2>
+        </div>
+        <div class="col-12">
+          <button class="startButton">LET'S GET STARTED!</button>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
-      <div class="jumbotron jumbotron-fluid mb-0">
-        <div class="container mt-4 mb-4">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h1 class="mb-4">We <span class="text-danger">&#x2764;</span> new friends!</h1>
-            </div>
-            <div class="col-12 text-center">
-              <nav class="nav justify-content-center">
-                <a class="text-white mr-2 pr-1" data-toggle="tooltip" data-placement="top" title="Twitter">
-                  <i class="fab fa-twitter fa-2x"></i>
-                  <span class="sr-only">Link to Twitter page</span>
-                </a>
-                <a class="text-white mr-2 pr-1" data-toggle="tooltip" data-placement="top" title="Facebook">
-                  <i class="fab fa-facebook-f fa-2x"></i>
-                  <span class="sr-only">Link to Facebook page</span>
-                </a>
-                <a class="text-white" data-toggle="tooltip" data-placement="top" title="Google+">
-                  <i class="fab fa-google-plus-g fa-2x"></i>
-                  <span class="sr-only">Link to Google Plus page</span>
-                </a>
-              </nav>
-            </div>
-          </div>
+      <div class="container">
+        <div class="col-12 contact__title">
+          <h1 class="title">We <span class="red-heart">&#x2764;</span> new friends!</h1>
+        </div>
+        <div class="col-12 contact__links">
+          <nav class="nav">
+            <a href="https://twitter.com/" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://plus.google.com/" title="Google+"><i class="fab fa-google-plus-g fa-2x"></i></a>
+          </nav>
         </div>
       </div>
     </section>

@@ -1,0 +1,66 @@
+@mixin feature-section {
+  .features {
+    background-color: #fff;
+    padding: 2.6rem 2rem 4.7rem 2rem;
+    &__title {
+      font-size: 2.8rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      margin-bottom: 0;
+      padding-bottom: 0rem;
+      text-align: center;
+    } 
+
+    &__subtitle {
+      margin-top: 0;
+      padding: 0 0 5rem 0;
+      text-align: center;
+    }
+
+    &__phone {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4.2rem;
+
+      .phone {
+        width: 60.5%;
+      }
+
+      .screen {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+      }
+    }
+
+    &__list {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .card-title {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;
+        text-align: center;
+      }
+
+      .card-subtitle {
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .card-text {
+        margin-bottom: 3.8rem;
+        margin-top: 0;
+        line-height: 1.45rem;
+        text-align: center;
+      }
+    }
+  }
+}

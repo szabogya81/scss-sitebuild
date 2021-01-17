@@ -1,0 +1,66 @@
+@mixin contact-section {
+  .contact {
+    .container {
+
+      background-color: get-value("contact_background", $data: $colors);
+      padding: 2rem 0 5rem 0;
+      text-align: center;
+      
+      .contact__title {
+        
+        .title {
+          font-size: 2.8rem;
+          font-weight: 100;
+          margin-bottom: 0;
+
+          .red-heart {
+            color: get-value("contact_heart", $data: $colors);
+          }
+        }
+      }
+
+      .contact__links {
+      
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.1rem;
+        .fab {
+          border-radius: 100%;
+          color: get-value("contact_fa_text", $data: $colors);
+          display: inline-block;
+          opacity: 90%;
+        }
+        
+        .fa-twitter {
+          background-color: get-value("contact_fa_twitter", $data: $colors);
+          padding: 1.2rem;
+        }
+        
+        .fa-twitter:hover {
+          background-color: get-value("contact_fa_twitter-hover", $data: $colors);
+        }
+        
+        .fa-facebook-f {
+          background-color: get-value("contact_fa_facebook", $data: $colors);
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          padding: 1.2rem 1.6rem;
+        }
+        
+        .fa-facebook-f:hover {
+          background-color: get-value("contact_fa_facebook-hover", $data: $colors);
+        }
+        
+        .fa-google-plus-g {
+          background-color: get-value("contact_fa_gooogle-plus", $data: $colors);
+          padding: 1.2rem 1rem;
+        }
+        
+        .fa-google-plus-g:hover {
+          background-color: get-value("contact_fa_gooogle-plus-hover", $data: $colors);;
+        }
+      }
+    }
+  }
+}

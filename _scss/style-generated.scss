@@ -2,12 +2,16 @@
 @import "./mixins/mixins";
 @import "./variables/variables";
 
+@include set-page-basics();
 
 @include generate-column-default();
 @include generate-columns();
 @include generate-container();
 
 @include import-fonts();
-@include generate-header();
-@include generate-menu();
-@include generate-footer();
+@include header();
+@include main-menu();
+@include feature-section();
+@include start-section();
+@include contact-section();
+@include footer();

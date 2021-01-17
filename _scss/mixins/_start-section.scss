@@ -1,0 +1,49 @@
+@mixin start-section {
+  .start {
+    min-height:616px;
+    background:url("../img/bg-cta.jpg") get-value("start_background-layer", $data: $colors);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .container {
+      padding-top: 1.3rem;
+      [class^=col] {
+        margin-bottom: 0.25rem;
+        padding: 0 0 0 3rem;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 2.9rem;
+      font-weight: 100;
+      line-height: 3.2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .startButton {
+      background-color: get-value("start_start-button_background", $data: $colors);
+      border:2px solid transparent;
+      border-color: get-value("start_start-button_color", $data: $colors);
+      border-radius: 40px;
+      color: get-value("start_start-button_color", $data: $colors);
+      font-size: 0.65rem;
+      font-stretch: ultra-expanded;
+      margin-top: 1rem;
+      padding: 0.9rem 3rem;
+      transition: 0.3s;
+    }
+    
+    .startButton:hover {
+      background-color: get-value("start_start-button_hover-background", $data: $colors);
+      border-color:  get-value("start_start-button_hover-border", $data: $colors);
+    }
+  }
+  
+  
+}

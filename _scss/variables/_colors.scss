@@ -1,10 +1,37 @@
 $colors: (
+  body: (
+    gradient-start: #da2431,
+    gradient-end: #7a4397
+  ),
   menu: (
     active-item: #fdcc52,
     background-scroll: #fff,
     text: #2f2f2f,
     text-hover: #fff,
     text-scroll:#a8a3a3
+  ),
+
+  start: (
+    background-layer: rgba(0, 0, 0, 0.6),
+    start-button: (
+      background: rgba(255,255,255,0),
+      color: #fff,
+      hover-background: #fdcc52,
+      hover-border: #fdcc52
+    )
+  ),
+  contact: (
+    background: #fec947,
+    heart: #dd4C39,
+    fa: (
+      text: #fff,
+      twitter: rgba(29, 161, 243, 0.9),
+      twitter-hover: rgba(29, 161, 243, 1),
+      facebook: rgb(59, 89, 153, 0.9),
+      facebook-hover: rgb(59, 89, 153, 1),
+      gooogle-plus: rgb(221, 76, 57, 0.9),
+      gooogle-plus-hover: rgb(221, 76, 57, 1)
+    )
   ),
   footer: (
     background: #222,

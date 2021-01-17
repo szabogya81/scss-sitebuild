@@ -1,0 +1,24 @@
+@mixin set-page-basics {
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-image: 
+      url("../img/bg-pattern.png"), 
+      linear-gradient(to right, 
+        get-value(body_gradient-start, $data: $colors), 
+        get-value(body_gradient-end, $data: $colors));
+    margin: 0;
+    min-width: 400px; 
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+  }
+  
+  p {
+    font-family: Muli, Helvetica, Arial, sans-serif;
+  }
+}
