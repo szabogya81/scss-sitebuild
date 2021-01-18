@@ -1,0 +1,35 @@
+@mixin modal {
+  .modal {
+    background-color: get-value("modal_background", $data: $colors);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .modal-content {
+    background-color: get-value("modal_content-background", $data: $colors);
+    border: 1px solid get-value("modal_content-border", $data: $colors);
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .close {
+    color: get-value("modal_close", $data: $colors);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: get-value("modal_close-hover", $data: $colors);
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

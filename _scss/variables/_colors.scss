@@ -50,5 +50,12 @@ $colors: (
     background: #222,
     text: #626262,
     link-hover: #fdcc52
+  ),
+  modal: (
+    background: rgba(0,0,0,0.4),
+    content-background: #fefefe,
+    content-border: #888,
+    close: #aaa,
+    close-hover: #000
   )
 );

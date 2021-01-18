@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: get-value(container_padding_default);
     position: relative;
-    //max-width: get-value(container-maxWidth);
+    max-width: get-value(container_maxWidth);
 
     @include desktop-view {
       padding: get-value(container_padding_desktop);
