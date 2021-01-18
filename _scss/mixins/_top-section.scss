@@ -1,6 +1,12 @@
 @mixin top-section {
   .top {
-    padding: 2.4rem 3rem 0rem 3rem;
+    margin-top: 0;
+    padding: 0 3rem 0rem 3rem;
+
+    @include desktop-view {
+      padding-top: 2.4rem;
+      padding-bottom: 2.5rem;
+    }
 
     &__info {
       display: flex;
@@ -15,7 +21,16 @@
       line-height: 2rem;
       margin-bottom: 0;
       padding-bottom: 0rem;
+      padding-top: 3rem;
       text-align: center;
+
+      @include desktop-view {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        padding-left: 11rem;
+        padding-right: 0;
+        text-align: left;
+      }
     } 
 
     &__button {
@@ -45,6 +60,12 @@
 
       .phone {
         width: 66%;
+
+        @include desktop-view {
+          justify-content: unset;
+          padding-left: 0;
+          width: 48%;
+        }
       }
 
       .screen {
@@ -52,35 +73,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 55%;
-      }
-    }
+        width: 55.5%;
 
-    &__list {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      .card-title {
-        font-size: 4rem;
-        line-height: 4rem;
-        margin-bottom: 0.5rem;
-        padding-bottom: 0;
-        text-align: center;
-      }
-
-      .card-subtitle {
-        font-size: 1.6rem;
-        margin-bottom: 0.3rem;
-        margin-top: 0;
-        text-align: center;
-      }
-
-      .card-text {
-        margin-bottom: 3.8rem;
-        margin-top: 0;
-        line-height: 1.45rem;
-        text-align: center;
+        @include desktop-view {
+          width: 40%;
+        }
       }
     }
   }
