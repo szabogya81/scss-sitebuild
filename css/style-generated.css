@@ -412,6 +412,17 @@ header {
   background-color: #fff;
   padding: 2.6rem 2rem 4.7rem 2rem;
 }
+@media only screen and (min-width: 993px) {
+  .features {
+    padding: 2.2rem 2rem 0.5rem 2rem;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .features .container > [class^=col] {
+    padding-bottom: 0;
+    padding-top: 0.8rem;
+  }
+}
 .features__title {
   font-size: 2.8rem;
   font-weight: 400;
@@ -433,6 +444,13 @@ header {
 .features__phone .phone {
   width: 60.5%;
 }
+@media only screen and (min-width: 993px) {
+  .features__phone .phone {
+    justify-content: unset;
+    padding-left: 9rem;
+    width: 75%;
+  }
+}
 .features__phone .screen {
   position: absolute;
   top: 50%;
@@ -440,11 +458,30 @@ header {
   transform: translate(-50%, -50%);
   width: 50%;
 }
+@media only screen and (min-width: 993px) {
+  .features__phone .screen {
+    left: 67%;
+    width: 60%;
+  }
+}
 .features__list {
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+@media only screen and (min-width: 993px) {
+  .features__list {
+    justify-content: start;
+  }
+  .features__list .container {
+    padding-left: 0;
+  }
+  .features__list .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .features__list .card-title {
   font-size: 4rem;
@@ -452,6 +489,11 @@ header {
   margin-bottom: 0.5rem;
   padding-bottom: 0;
   text-align: center;
+}
+@media only screen and (min-width: 993px) {
+  .features__list .card-title {
+    margin-top: 2.5rem;
+  }
 }
 .features__list .card-subtitle {
   font-size: 1.6rem;
